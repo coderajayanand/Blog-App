@@ -1,1 +1,0 @@
-web: gunicorn iblogsa.wsgi --log-file -
