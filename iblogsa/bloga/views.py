@@ -5,7 +5,7 @@ from bloga.models import Post,Category
 
 # Create your views here.
 def home(request):
-    posts = Post.objects.all()[:11]
+    posts = post.objects.all()[:11]
     cats = Category.objects.all()
 
     data = {
@@ -17,13 +17,13 @@ def home(request):
 
 
 def post(request, url):
-    post=Post.objects.get(url=url)
+    post=post.objects.get(url=url)
     cats=Category.objects.all()
     return render(request,'posts.html',{'post':post, 'cats':cats})
 
 def category(request, url):
     cat=Category.objects.get(url=url)
-    posts=Post.objects.filter(cat=cat)
+    posts=post.objects.filter(cat=cat)
     return render(request,"category.html",{'cat':cat,'posts':posts})
 
 def about(request):
