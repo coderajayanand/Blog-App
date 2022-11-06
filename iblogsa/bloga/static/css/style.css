@@ -17,3 +17,31 @@ margin-left: auto;
 margin-right: auto;
 width: 50%;
 }
+
+.fullpage
+{
+	background-color: #333333;
+}
+
+.container
+{
+	color: yellow;
+	width: 70%;
+	margin: auto;
+
+}
+.container p
+{
+	color: yellow;
+	background-color: #333333;
+	padding: 100px;
+	border-left: 15px blue solid;
+	border-right: 15px blue solid;
+	border-top: 10px red solid;
+	border-bottom: 10px red solid;
+
+}
+.container h3 h1
+{
+	border: ;
+}
